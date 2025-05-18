@@ -37,7 +37,7 @@ const Home = () => {
         {/* Search By Category and Author */}
         <form
           onSubmit={onSubmitHandler}
-          className="flex justify-start items-center gap-4 mt-5 mb-5"
+          className="flex justify-start items-center gap-4 mt-5 mb-5 sm:flex-col sm:gap-3"
         >
           <div>
             <input
