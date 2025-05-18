@@ -3,6 +3,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { AppContext } from "../context/AppContext";
 import { useNavigate } from "react-router-dom";
+import { API_URL } from "../constants/api";
 
 const Login = () => {
 
@@ -122,14 +123,14 @@ const Login = () => {
             ) : (
               <p
                 onClick={() => setCurrentState("Login")}
-                className="cursor-pointer"
+                className="cursor-pointer hover:underline"
               >
                 Login
               </p>
             )}
           </div>
           <button
-            className="bg-black text-white w-40 font-light px-8 py-2 mt-4 hover:bg-gray-800 cursor-pointer"
+            className="bg-black text-white w-40 font-light px-8 py-2 mt-4 rounded hover:bg-gray-800 cursor-pointer"
             disabled={loading}
           >
             {loading
