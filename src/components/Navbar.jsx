@@ -39,7 +39,6 @@ const NavBar = () => {
           >
             My Blogs
           </p>
-          {/* <p className="max-sm:hidden">Hi, MK</p> */}
           <div className="relative group">
             <MdAccountCircle size={25} />
             <div

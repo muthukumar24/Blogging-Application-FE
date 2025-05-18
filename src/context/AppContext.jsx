@@ -262,5 +262,7 @@ export const AppcontextProvider = ({ children }) => {
     deleteBlog,
   };
 
-  return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
+  return <AppContext.Provider value={value}>
+          {children}
+         </AppContext.Provider>;
 };

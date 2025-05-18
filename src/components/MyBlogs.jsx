@@ -12,7 +12,6 @@ const MyBlogs = () => {
     getUserBlogs();
   }, [])
 
-  // Delete a Blog
   const handleDelete = async (blogId) => {
     await deleteBlog(blogId);
     getUserBlogs();
