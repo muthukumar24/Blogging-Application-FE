@@ -37,7 +37,9 @@ const Home = () => {
         {/* Search By Category and Author */}
         <form
           onSubmit={onSubmitHandler}
-          className="flex justify-start items-center gap-4 mt-5 mb-5 sm:flex-col sm:gap-3"
+          id="blog-search-form"
+          className="flex sm:flex-col md:flex-row lg:flex-row justify-start items-center gap-4
+          mt-5 mb-5"
         >
           <div>
             <input
@@ -82,7 +84,7 @@ const Home = () => {
       </div>
 
       {/* Blogs Grid Card */}
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pb-5">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pb-5">
         {blogsToRender.map((item) => (
           <div
             key={item._id}

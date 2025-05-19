@@ -16,7 +16,9 @@ const NavBar = () => {
   return (
     <div className="flex items-center justify-between py-4 border-b-2">
       <Link to={"/blogs"}>
-        <h1 className="text-2xl font-semibold">BlogNest</h1>
+        <h1 className="text-1xl md:text-2xl lg:text-2xl font-semibold">
+          BlogNest
+        </h1>
       </Link>
 
       <div>
@@ -39,22 +41,13 @@ const NavBar = () => {
           >
             My Blogs
           </p>
-          <div className="relative group">
-            <MdAccountCircle size={25} />
-            <div
-              className="cursor-pointer absolute hidden group-hover:block 
-              top-0 right-0 z-10 text-black rounded pt-15"
-            >
-              <ul className="list-none m-0 p-2 bg-white rounded-medium border text-sm">
-                <li
-                  className="py-1 px-2 cursor-pointer hover:text-gray-600"
-                  onClick={logout}
-                >
-                  Logout
-                </li>
-              </ul>
-            </div>
-          </div>
+
+          <p
+            className="flex justify-center items-center cursor-pointer hover:text-gray-600"
+            onClick={logout}
+          >
+            <MdAccountCircle size={20} /> Logout
+          </p>
         </div>
       </div>
     </div>

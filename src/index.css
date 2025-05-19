@@ -6,3 +6,13 @@
   font-family: Outfit;
   scroll-behavior: smooth;
 }
+
+@media screen and (max-width: 470px)  {
+  #blog-search-form {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
